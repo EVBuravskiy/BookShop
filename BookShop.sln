@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36127.28 d17.14
+VisualStudioVersion = 17.14.36127.28
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShop", "BookShop\BookShop.csproj", "{073A3B55-7C17-4467-8428-89890AD9F2E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShop.DB", "BookShop.DB\BookShop.DB.csproj", "{3E7C850F-5750-4BC7-915B-DC26CDAF90F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{073A3B55-7C17-4467-8428-89890AD9F2E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{073A3B55-7C17-4467-8428-89890AD9F2E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{073A3B55-7C17-4467-8428-89890AD9F2E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E7C850F-5750-4BC7-915B-DC26CDAF90F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E7C850F-5750-4BC7-915B-DC26CDAF90F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E7C850F-5750-4BC7-915B-DC26CDAF90F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E7C850F-5750-4BC7-915B-DC26CDAF90F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
