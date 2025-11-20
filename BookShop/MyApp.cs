@@ -1,4 +1,5 @@
-﻿using BookShop.Services;
+﻿using BookShop.Data;
+using BookShop.Services;
 using BookShop.ViewModels;
 using BookShop.Views.Windows;
 using Microsoft.Extensions.DependencyInjection;
@@ -23,6 +24,7 @@ namespace BookShop
         public static IServiceProvider Services => Host.Services;
 
         public static void ConfigureServices(HostBuilderContext host, IServiceCollection services) => services
+            .AddDatabase(host.Configuration.GetSection("Database"))
             .AddServices()
             .AddViewModels()
             ;
