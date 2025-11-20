@@ -1,16 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BookShop.ViewModels;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+
 
 namespace BookShop.Views.Windows
 {
@@ -19,9 +9,14 @@ namespace BookShop.Views.Windows
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ViewModelLocator ViewModelLocator { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
+            ViewModelLocator = new ViewModelLocator();
+            DataContext = ViewModelLocator.MainWindowViewModel;
+            
         }
     }
 }

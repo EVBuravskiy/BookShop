@@ -1,4 +1,6 @@
-﻿using BookShop.Views.Windows;
+﻿using BookShop.Services;
+using BookShop.ViewModels;
+using BookShop.Views.Windows;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Windows;
@@ -20,10 +22,10 @@ namespace BookShop
         }
         public static IServiceProvider Services => Host.Services;
 
-        public static void ConfigureServices(HostBuilderContext host, IServiceCollection services)
-        {
-
-        }
+        public static void ConfigureServices(HostBuilderContext host, IServiceCollection services) => services
+            .AddServices()
+            .AddViewModels()
+            ;
 
         protected override async void OnStartup(StartupEventArgs e)
         {

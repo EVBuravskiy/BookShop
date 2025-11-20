@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BookShop.ViewModels
 {
-    internal class MainWindowViewModel : ViewModel
+    public class MainWindowViewModel : ViewModel
     {
         private string title = "Главное окно програмы";
         public string Title
